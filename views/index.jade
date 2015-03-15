@@ -3,3 +3,7 @@ extends layout
 block content
   h1.title= title
   p Welcome to #{title}
+  - var classes = ["btn", "btn-default"]
+  //- form#facebook(name="facebook",method="get",action="/facebook")
+  //- button#btnSubmit(type="submit") Facebook
+  a(class={active: currentUrl === '/'} href='/facebook') Facebook
